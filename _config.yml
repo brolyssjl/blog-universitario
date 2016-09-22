@@ -23,5 +23,5 @@ twitter_username: JonatanCBM
 github_username:  brolyssjl
 
 # Build settings
+include: ['_pages']
 markdown: kramdown
-theme: minima
