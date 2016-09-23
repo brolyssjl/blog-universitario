@@ -2,22 +2,37 @@
 layout: default
 ---
 
-<div class="home">
+<div class="row">
+  <div class="col-md-4 col-lg-4 no-padding">
+    <div class="background-landing">
+      <div class="transparencia-landing">
+        <img src="/images/logo.png">
+        <h1>Universidad Platzi</h1>
+        <p class="parrafo-titulo">Mejora tu futuro con los mejores profesionales de la Web!!</p>
+        <a href="https://www.platzi.com" target="_blank" class="btn btn-success">Comienza tu carrera hoy</a>
+        <p class="parrafo-redes">
+          <a href="https://www.facebook.com" target="_blank" class="reset-link-color"><span class="icon-facebook2"></span></a>
+          <a href="https://www.twitter.com" target="_blank" class="reset-link-color"><span class="icon-twitter"></span></a>
+          <a href="https://plus.google.com" target="_blank" class="reset-link-color"><span class="icon-google-plus2"></span></a>
+          <a href="https://www.youtube.com" target="_blank" class="reset-link-color"><span class="icon-youtube"></span></a>
+          <a href="https://www.instagram.com" target="_blank" class="reset-link-color"><span class="icon-instagram"></span></a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-8 col-lg-8">
+    <ul class="post-list">
+      {% for post in site.posts %}
+        <li>
+          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-  <h1 class="page-heading">Posts</h1>
+          <h2>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
+          </h2>
+        </li>
+      {% endfor %}
+    </ul>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  </div>
 </div>
