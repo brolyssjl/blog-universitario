@@ -4,9 +4,26 @@ layout: default
 
 <div class="row">
   <div class="col-md-12 col-lg-12">
-    <h2 class="blog-post-title">{{ page.title }}</h2>
-    <p class="blog-post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-    <hr></hr>
-    <p>{{ content }}</p>
+    <!-- Sección encabezado del Post -->
+    <div class="row encabezado-post">
+      <div class="col-md-12 col-lg-12 no-padding">
+        <div class="background-post" style="background: url('{{ page.image2 }}') no-repeat center;">
+          <div class="transparencia-post">
+            <h1>{{ page.title }}</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Sección Newsletter  -->
+    {% include newsletter.html %}
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
+        <p class="blog-post-date">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+        <hr></hr>
+        <!-- Bótones de compartir en redes sociales -->
+        <!-- Contenido del Post -->
+        <p>{{ content }}</p>
+      </div>
+    </div>
   </div>
 </div>

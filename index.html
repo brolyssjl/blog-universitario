@@ -23,18 +23,28 @@ layout: default
   <div class="col-md-8 col-lg-8">
     {% include newsletter.html %}
     {% include navigation.html %}
-    <ul class="post-list">
-      {% for post in site.posts %}
-        <li>
-          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-          <h2>
-            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
-          </h2>
-        </li>
-      {% endfor %}
-    </ul>
-
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    <h1 class="titulo-posts">Posts Recientes</h1>
+    <div class="row">
+      <div class="col-md-12 col-lg-12">
+        {% for post in site.posts %}
+          <div class="media">
+            <div class="media-left">
+              <a href="#">
+                <img class="media-object" src="{{ post.image }}" alt="{{ post.title }}" width="160">
+              </a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading gris-oscuro"><strong>{{ post.title | escape }}</strong></h4>
+              <p class="verde-platzi">{{ post.date | date: "%b %-d, %Y" }}</p>
+              <p class="gris-oscuro text-justify">{{ post.content | strip_html | truncate: 250, '...' }}</p>
+              <a href="{{ post.url | prepend: site.baseurl }}" class="btn btn-success">Ver detalle »</a>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
   </div>
 </div>
+<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+<!-- Pie de página -->
+{% include footer.html %}
