@@ -97,6 +97,9 @@
 	font-weight: bold;
 	margin: 15px 0px;
 }
+.content-blog p {
+	text-align: justify;
+}
 /* Fuentes para íconos redes sociales del landing */
 @font-face {
   font-family: 'icomoon';

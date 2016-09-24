@@ -17,10 +17,25 @@ layout: default
     <!-- Sección Newsletter  -->
     {% include newsletter.html %}
     <div class="row">
-      <div class="col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
+      <div class="col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3 content-blog">
         <p class="blog-post-date">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-        <hr></hr>
         <!-- Bótones de compartir en redes sociales -->
+        <div class="row text-center">
+          <div class="col-md-3">
+            <div class="fb-share-button" data-href="https://brolyssjl.github.io/blog-universitario" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fbrolyssjl.github.io%2Fblog-universitario&amp;src=sdkpreparse">Compartir</a></div>
+          </div>
+          <div class="col-md-3">
+            <a href="https://twitter.com/share" class="twitter-share-button" data-url="https://brolyssjl.github.io/blog-universitario" data-lang="es" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </div>
+          <div class="col-md-3">
+            <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: es_ES</script>
+            <script type="IN/Share" data-url="https://brolyssjl.github.io/blog-universitario"></script>
+          </div>
+          <div class="col-md-3">
+            <div class="g-plus" data-action="share" data-annotation="none" data-href="https://brolyssjl.github.io/blog-universitario"></div>
+          </div>
+        </div>
+        <hr></hr>
         <!-- Contenido del Post -->
         <p>{{ content }}</p>
       </div>
