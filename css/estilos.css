@@ -62,7 +62,7 @@
 }
 .newsletter-zone {
 	padding: 25px;
-	/*background-color: #edf1f9;*/
+	background-color: #edf1f9;
 }
 .titulo-posts {
 	color: #7FC719;
@@ -91,7 +91,7 @@
     color: #FFF;
 }
 .encabezado-post {
-	min-height: 223px;
+	min-height: 203px;
 }
 .blog-post-date {
 	font-weight: bold;
@@ -99,6 +99,20 @@
 }
 .content-blog p {
 	text-align: justify;
+}
+.ancho-home-derecha {
+	width: 64%;
+}
+.author-avatar {
+	margin: 50px 0px 20px 0px;
+}
+.btn-regresar {
+	margin-top: 50px;
+}
+.border-footer {
+	border-top: 1px solid #efefef;
+	margin: 45px 0px 0px 0px;
+	padding: 30px 0px;
 }
 /* Fuentes para íconos redes sociales del landing */
 @font-face {

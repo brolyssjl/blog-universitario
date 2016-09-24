@@ -5,6 +5,10 @@ image: /images/bootstrap.png
 image2: /images/bootstrap_logo.png
 date:   2016-09-23 12:04:30 -0500
 categories: tech
+author: Jonatan Bonilla
+avatar: https://avatars3.githubusercontent.com/u/5436358?v=3&s=466
+social: JonatanCBM
+url_social: https://twitter.com/JonatanCBM
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus facilisis mollis convallis. Quisque vel nulla porttitor, semper ligula ac, convallis quam. Sed pretium nunc feugiat augue eleifend viverra. Maecenas tellus urna, vehicula vel massa eu, pharetra consequat odio. Nullam dolor risus, fermentum vitae magna sit amet, vehicula condimentum ex. Sed tempus viverra felis, et pellentesque augue semper a. Nam at neque interdum, molestie sem at, imperdiet justo. Proin tempor lacus et turpis ultrices sodales. Sed sed nibh non felis rhoncus rutrum in quis felis. Sed venenatis elit nisi, scelerisque dictum dolor porttitor quis. Ut tincidunt tellus facilisis, pretium enim sed, tincidunt ex. Maecenas non nibh ac massa pellentesque eleifend. Vestibulum venenatis lorem a mattis ornare. Nullam in porttitor turpis.
