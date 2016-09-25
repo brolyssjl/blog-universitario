@@ -17,8 +17,8 @@ title: Blog Universitario
 email: blog-uni@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Aplicación tipo Blog creada con la ayuda de Jekyll y Bootstrap
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://localhost:4000" # the base hostname & protocol for your site
+baseurl: "/blog-universitario" # the subpath of your site, e.g. /blog
+url: "brolyssjl.github.io" # the base hostname & protocol for your site
 twitter_username: JonatanCBM
 github_username:  brolyssjl
 

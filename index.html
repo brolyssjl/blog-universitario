@@ -6,7 +6,7 @@ layout: default
   <div class="col-md-4 col-lg-4 no-padding hidden-xs hidden-sm">
     <div class="background-landing">
       <div class="transparencia-landing">
-        <img src="/images/logo.png">
+        <img src="/blog-universitario/images/logo.png">
         <h1>Universidad Platzi</h1>
         <p class="parrafo-titulo">Mejora tu futuro con los mejores profesionales de la Web!!</p>
         <a href="https://www.platzi.com" target="_blank" class="btn btn-success">Comienza tu carrera hoy</a>
@@ -30,7 +30,7 @@ layout: default
           <div class="media">
             <div class="media-left hidden-xs hidden-sm">
               <a href="#">
-                <img class="media-object" src="{{ post.image }}" alt="{{ post.title }}" width="160">
+                <img class="media-object" src="{{ post.image | prepend: site.baseurl }}" alt="{{ post.title }}" width="160">
               </a>
             </div>
             <div class="media-body">

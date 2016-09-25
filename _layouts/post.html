@@ -7,7 +7,7 @@ layout: default
     <!-- Sección encabezado del Post -->
     <div class="row encabezado-post">
       <div class="col-md-12 col-lg-12 no-padding">
-        <div class="background-post" style="background: url('{{ page.image2 }}') no-repeat center;">
+        <div class="background-post" style="background: url('{{ page.image2 | prepend: site.baseurl }}') no-repeat center;">
           <div class="transparencia-post">
             <h1>{{ page.title }}</h1>
           </div>
@@ -19,9 +19,9 @@ layout: default
     <div class="row">
       <!-- Sección autor del Post -->
       <div class="col-md-3 text-center">
-        <img src="{{ page.avatar }}" alt="{{ page.author }}" width="100" class="author-avatar"/>
+        <img src="{{ page.avatar | prepend: site.baseurl }}" alt="{{ page.author }}" width="100" class="author-avatar"/>
         <p>{{ page.author }}</p>
-        <p><a href="{{ page.url_social }}" target="_blank">@{{ page.social }}</a></p>
+        <p><a href="{{ page.url_social | prepend: site.baseurl }}" target="_blank">@{{ page.social }}</a></p>
       </div>
       <!-- Contenido del Post -->
       <div class="col-md-6 col-lg-6 content-blog">
