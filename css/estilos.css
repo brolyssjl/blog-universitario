@@ -108,6 +108,11 @@
 }
 .btn-regresar {
 	margin-top: 50px;
+	font-size: 18px;
+}
+.btn-regresar:hover, .btn-regresar:focus {
+	color: #7FC719;
+	text-decoration: none;
 }
 .border-footer {
 	/*margin: 45px 0px 0px 0px;*/
@@ -124,6 +129,13 @@ footer > h2 {
 }
 .navbar-blog .navbar-toggle .icon-bar {
     background-color: #7FC719;
+}
+.pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover {
+    background-color: #7FC719;
+    border-color: #7FC719;
+}
+.pagination > li > a, .pagination > li > span {
+    color: #7FC719;
 }
 /* Fuentes para íconos redes sociales del landing */
 @font-face {
@@ -171,5 +183,11 @@ footer > h2 {
 @media (max-width: 992px) {
   .ancho-home-derecha {
 		width: initial;
+	}
+}
+@media (max-width: 385px) {
+  .btn-compartir {
+		margin: 5px 0px;
+		width: 100%;
 	}
 }

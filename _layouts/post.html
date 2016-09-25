@@ -25,20 +25,23 @@ layout: default
       </div>
       <!-- Contenido del Post -->
       <div class="col-md-6 col-lg-6 content-blog">
-        <p class="blog-post-date"><span class="glyphicon glyphicon-calendar"></span> {{ page.date | date: "%b %-d, %Y" }}</p>
+        <p class="blog-post-date">
+          <span class="glyphicon glyphicon-calendar"></span> {{ page.date | date: "%b %-d, %Y" }}
+          <a href="/" class="hidden-md hidden-lg verde-platzi pull-right"><span class="glyphicon glyphicon-chevron-left"></span> Regresar</a>
+        </p>
         <!-- Bótones de compartir en redes sociales -->
         <div class="row text-center">
-          <div class="col-md-3">
+          <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-compartir">
             <div class="fb-share-button" data-href="https://brolyssjl.github.io/blog-universitario" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fbrolyssjl.github.io%2Fblog-universitario&amp;src=sdkpreparse">Compartir</a></div>
           </div>
-          <div class="col-md-3">
+          <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-compartir">
             <a href="https://twitter.com/share" class="twitter-share-button" data-url="https://brolyssjl.github.io/blog-universitario" data-lang="es" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
           </div>
-          <div class="col-md-3">
+          <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-compartir">
             <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: es_ES</script>
             <script type="IN/Share" data-url="https://brolyssjl.github.io/blog-universitario"></script>
           </div>
-          <div class="col-md-3">
+          <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-compartir">
             <div class="g-plus" data-action="share" data-annotation="none" data-href="https://brolyssjl.github.io/blog-universitario"></div>
           </div>
         </div>
@@ -48,8 +51,8 @@ layout: default
         <div class="fb-comments" data-href="https://brolyssjl.github.io/blog-universitario" data-mobile="true" data-numposts="5"></div>
       </div>
       <!-- Botón regresar Inicio -->
-      <div class="col-md-3 text-center">
-        <a href="{{ "/" | prepend: site.baseurl }}" class="btn btn-info btn-regresar"><span class="glyphicon glyphicon-chevron-left"></span> Regresar</a>
+      <div class="col-md-3 text-center hidden-xs hidden-sm">
+        <a href="{{ "/" | prepend: site.baseurl }}" class="btn btn-regresar verde-platzi"><span class="glyphicon glyphicon-chevron-left"></span> Regresar</a>
       </div>
     </div>
   </div>
