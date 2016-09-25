@@ -19,15 +19,15 @@ layout: default
     <div class="row">
       <!-- Sección autor del Post -->
       <div class="col-md-3 text-center">
-        <img src="{{ page.avatar | prepend: site.baseurl }}" alt="{{ page.author }}" width="100" class="author-avatar"/>
+        <img src="{{ page.avatar }}" alt="{{ page.author }}" width="100" class="author-avatar"/>
         <p>{{ page.author }}</p>
-        <p><a href="{{ page.url_social | prepend: site.baseurl }}" target="_blank">@{{ page.social }}</a></p>
+        <p><a href="{{ page.url_social }}" target="_blank">@{{ page.social }}</a></p>
       </div>
       <!-- Contenido del Post -->
       <div class="col-md-6 col-lg-6 content-blog">
         <p class="blog-post-date">
           <span class="glyphicon glyphicon-calendar"></span> {{ page.date | date: "%b %-d, %Y" }}
-          <a href="/" class="hidden-md hidden-lg verde-platzi pull-right"><span class="glyphicon glyphicon-chevron-left"></span> Regresar</a>
+          <a href="{{ "/" | prepend: site.baseurl }}" class="hidden-md hidden-lg verde-platzi pull-right"><span class="glyphicon glyphicon-chevron-left"></span> Regresar</a>
         </p>
         <!-- Bótones de compartir en redes sociales -->
         <div class="row text-center">
